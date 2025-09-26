@@ -20,7 +20,7 @@ model_options = {
 }
 
 # Streamlit UI
-st.title("🧪 Silicon Wafer Defect Classification")
+st.title("Silicon Wafer Defect Classification")
 
 # Model selection
 selected_model_name = st.selectbox("Select a model:", list(model_options.keys()))
@@ -49,3 +49,4 @@ if uploaded_file is not None:
     st.markdown(f"### 🧠 Model Used: `{selected_model_name}`")
     st.markdown(f"### 🔍 Prediction: `{predicted_class}`")
     st.markdown(f"### 📊 Confidence: `{confidence:.2f}%`")
+
